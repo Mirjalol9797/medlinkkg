@@ -38,7 +38,7 @@ onMounted(() => {
 
   <div class="site-scroll-top" @click="siteScrollTop">
     <img
-      src="/icons/header/scroll-top.svg"
+      src="/icons/general/scroll-top.svg"
       alt="scroll-top"
       width="24px"
       height="24px"

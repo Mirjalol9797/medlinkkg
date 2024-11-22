@@ -17,7 +17,74 @@ onMounted(() => {});
 </script>
 
 <template>
-  <header>Header</header>
+  <header class="header py-4 border-b border-[#f7f7f7]">
+    <div class="site-container flex-center-between">
+      <nuxt-link to="/" class="inline-block w-[120px]">
+        <img src="/site-logo.png" alt="logo" title="logo" />
+      </nuxt-link>
+      <ul class="flex-center gap-6 font-medium">
+        <li>
+          <nuxt-link
+            to="/"
+            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+          >
+            Врачи
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link
+            to="/"
+            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+          >
+            Клиники
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link
+            to="/"
+            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+          >
+            Диагностика
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link
+            to="/"
+            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+          >
+            Услуги
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link
+            to="/"
+            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+          >
+            Препараты
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link
+            to="/"
+            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+          >
+            Болезни
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link
+            to="/"
+            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+          >
+            Еще
+          </nuxt-link>
+        </li>
+      </ul>
+      <button class="bg-[#f39] px-3 py-2 rounded-md text-white">
+        Добавить клинику
+      </button>
+    </div>
+  </header>
 </template>
 
 <style lang="scss" scoped></style>
