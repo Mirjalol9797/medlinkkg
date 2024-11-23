@@ -4,9 +4,7 @@
     <h1 class="main-page-title">
       Забота о вашем здоровье - ищите <br />
       клинику, врача, лекарства в
-      <span class="text-[#6486fa] border-b-[3px] border-[#6486fa] border-dashed"
-        >Бишкеке</span
-      >
+      <span>Бишкеке</span>
     </h1>
     <div class="grid grid-cols-6 gap-4">
       <div

@@ -2,13 +2,13 @@
 import { useAsyncData } from "nuxt/app";
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
-import CPopularDocsVue from "~/components/indexPage/CPopularDocs.vue";
 
 // components
 import CSearchHeader from "~/components/indexPage/CSearchHeader.vue";
 import CServices from "~/components/indexPage/CServices.vue";
 import CPopularDocs from "~/components/indexPage/CPopularDocs.vue";
 import CClinicSpecialties from "~/components/indexPage/СClinicSpecialties.vue";
+import CPopularClinic from "~/components/indexPage/CPopularClinic.vue";
 
 // api
 const { t } = useI18n();
@@ -27,6 +27,7 @@ const { data: newsBanner } = useAsyncData("banner", () =>
   </div>
   <CPopularDocs />
   <CClinicSpecialties />
+  <CPopularClinic />
 </template>
 
 <style lang="scss" scoped></style>
