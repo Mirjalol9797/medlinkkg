@@ -8,6 +8,7 @@ import CPopularDocsVue from "~/components/indexPage/CPopularDocs.vue";
 import CSearchHeader from "~/components/indexPage/CSearchHeader.vue";
 import CServices from "~/components/indexPage/CServices.vue";
 import CPopularDocs from "~/components/indexPage/CPopularDocs.vue";
+import CClinicSpecialties from "~/components/indexPage/СClinicSpecialties.vue";
 
 // api
 const { t } = useI18n();
@@ -25,6 +26,7 @@ const { data: newsBanner } = useAsyncData("banner", () =>
     <CServices />
   </div>
   <CPopularDocs />
+  <CClinicSpecialties />
 </template>
 
 <style lang="scss" scoped></style>
