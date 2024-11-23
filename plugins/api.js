@@ -1,6 +1,6 @@
 export default defineNuxtPlugin((nuxtApp) => {
   const api = $fetch.create({
-    baseURL: "https://backend.toprankings.uz/api/",
+    baseURL: "https://admin-panel.medlink.kg/api/v1",
     onRequest({ options }) {
       const headers = (options.headers ||= {});
       const locale = nuxtApp.$i18n.locale.value;
