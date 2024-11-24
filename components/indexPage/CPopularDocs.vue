@@ -29,7 +29,7 @@
           }"
         >
           <SwiperSlide>
-            <nuxt-link :to="localePath(`/doctors/terapevt`)" class="relative">
+            <nuxt-link :to="localePath(`/`)" class="relative">
               <div class="h-[140px]">
                 <img
                   src="@/public/icons/mainPage/popularDocs/terapevt.jpg"
@@ -48,7 +48,7 @@
             </nuxt-link>
           </SwiperSlide>
           <SwiperSlide>
-            <nuxt-link :to="localePath(`/doctors/kardiolog`)" class="relative">
+            <nuxt-link :to="localePath(`/`)" class="relative">
               <div class="h-[140px]">
                 <img
                   src="@/public/icons/mainPage/popularDocs/kardiolog.jpg"
@@ -67,7 +67,7 @@
             </nuxt-link>
           </SwiperSlide>
           <SwiperSlide>
-            <nuxt-link :to="localePath(`/doctors/pediatr`)" class="relative">
+            <nuxt-link :to="localePath(`/`)" class="relative">
               <div class="h-[140px]">
                 <img
                   src="@/public/icons/mainPage/popularDocs/pediatr.jpg"
@@ -86,7 +86,7 @@
             </nuxt-link>
           </SwiperSlide>
           <SwiperSlide>
-            <nuxt-link :to="localePath(`/doctors/lor`)" class="relative">
+            <nuxt-link :to="localePath(`/`)" class="relative">
               <div class="h-[140px]">
                 <img
                   src="@/public/icons/mainPage/popularDocs/lor.jpg"
@@ -105,7 +105,7 @@
             </nuxt-link>
           </SwiperSlide>
           <SwiperSlide>
-            <nuxt-link :to="localePath(`/doctors/nevrolog`)" class="relative">
+            <nuxt-link :to="localePath(`/`)" class="relative">
               <div class="h-[140px]">
                 <img
                   src="@/public/icons/mainPage/popularDocs/nevrolog.jpg"
@@ -124,7 +124,7 @@
             </nuxt-link>
           </SwiperSlide>
           <SwiperSlide>
-            <nuxt-link :to="localePath(`/doctors/okulist`)" class="relative">
+            <nuxt-link :to="localePath(`/`)" class="relative">
               <div class="h-[140px]">
                 <img
                   src="@/public/icons/mainPage/popularDocs/okulist.jpg"
@@ -143,7 +143,7 @@
             </nuxt-link>
           </SwiperSlide>
           <SwiperSlide>
-            <nuxt-link :to="localePath(`/doctors`)" class="relative">
+            <nuxt-link :to="localePath(`/`)" class="relative">
               <div class="h-[140px] blur-[3px]">
                 <img
                   src="@/public/icons/mainPage/popularDocs/okulist.jpg"

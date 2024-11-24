@@ -18,7 +18,7 @@ function closeModal(e) {
   >
     <div
       :class="classModal"
-      class="bg-white pt-8 p-6 w-full relative rounded-xl 768:p-8 480:!px-3"
+      class="bg-white w-full relative"
       :style="{ maxWidth: `${width}px` }"
     >
       <slot name="modal_content"></slot>

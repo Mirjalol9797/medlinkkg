@@ -6,6 +6,10 @@ export default {
       colors: {
         base: "#101116",
       },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(#fff 0%,#fefdfd 19.72%,#fdfcfc 34.2%,#f2f1f1 77.26%)",
+      },
     },
     screens: {
       420: { max: "420px" },

@@ -87,13 +87,11 @@ function updateValue(e) {
   }
 
   input {
-    box-shadow: 0 0 0 1px #18a53c;
     background-color: transparent;
     z-index: 2;
     position: relative;
     height: 48px;
     width: 100%;
-    border-radius: 12px;
     border-width: 0px;
     padding-left: 20px;
     padding-right: 20px;
@@ -101,10 +99,6 @@ function updateValue(e) {
     line-height: 20px;
     outline: none;
     color: #767676;
-
-    &:focus {
-      box-shadow: 0 0 0 2px #18a53c;
-    }
   }
 
   input {
