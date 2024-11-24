@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="bg-[#f3f3f3] py-10">
+  <div class="py-10">
     <div class="site-container">
       <div class="main-page-title">Диагностика в <span>Бишкеке</span></div>
       <div class="site-slider relative slider-diagnostics">
@@ -11,7 +11,7 @@
           :spaceBetween="16"
           :loop="false"
           :autoplay="{
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
           }"
           :navigation="{
@@ -108,6 +108,9 @@
 
 <style lang="scss">
 .slider-diagnostics {
+  .swiper {
+    padding: 0 8px;
+  }
   .swiper-wrapper {
     padding: 12px 0;
   }
@@ -123,21 +126,6 @@
       width: 40px;
       right: 0;
     }
-  }
-  .promo-card-persent {
-    clip-path: polygon(
-      50% 0%,
-      80% 10%,
-      100% 35%,
-      100% 70%,
-      80% 90%,
-      50% 100%,
-      20% 90%,
-      0% 70%,
-      0% 35%,
-      20% 10%
-    );
-    background: red;
   }
 }
 </style>

@@ -11,7 +11,8 @@ import CClinicSpecialties from "~/components/indexPage/СClinicSpecialties.vue";
 import CPopularClinic from "~/components/indexPage/CPopularClinic.vue";
 import CDoctorsSpecialties from "~/components/indexPage/СDoctorsSpecialties.vue";
 import CDiagnostics from "~/components/indexPage/СDiagnostics.vue";
-// api
+import CReviews from "../../components/indexPage/СReviews.vue";
+// apiCReviews
 const { t } = useI18n();
 const route = useRoute();
 
@@ -31,6 +32,7 @@ const { data: newsBanner } = useAsyncData("banner", () =>
   <CPopularClinic />
   <CDoctorsSpecialties />
   <CDiagnostics />
+  <CReviews />
 </template>
 
 <style lang="scss" scoped></style>
