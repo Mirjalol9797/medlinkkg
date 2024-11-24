@@ -6,6 +6,24 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 const settingsStore = useSettingsStore();
 
+if (process.client) {
+  // Асинхронная загрузка gtag.js
+  const script = document.createElement("script");
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-T95R35MYTD";
+  script.async = true;
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-T95R35MYTD");
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+}
+
 function siteScrollTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
