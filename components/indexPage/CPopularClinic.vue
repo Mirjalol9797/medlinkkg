@@ -19,8 +19,8 @@ function openChooseYourCity(e) {
           :spaceBetween="16"
           :loop="false"
           :navigation="{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next-clinic',
+            prevEl: '.swiper-button-prev-clinic',
           }"
           :breakpoints="{
             360: {
@@ -123,10 +123,10 @@ function openChooseYourCity(e) {
           </SwiperSlide>
         </Swiper>
         <div
-          class="swiper-button-prev !left-[-55px] bg-white rounded-full"
+          class="swiper-button-prev swiper-button-prev-clinic !left-[-55px] bg-white rounded-full"
         ></div>
         <div
-          class="swiper-button-next !right-[-55px] bg-white rounded-full"
+          class="swiper-button-next swiper-button-next-clinic !right-[-55px] bg-white rounded-full"
         ></div>
       </div>
     </div>

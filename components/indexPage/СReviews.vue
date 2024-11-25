@@ -11,7 +11,7 @@
           :spaceBetween="16"
           :loop="false"
           :navigation="{
-            nextElPr: ' .swiper-button-next-preview',
+            nextElPr: '.swiper-button-next-preview',
             prevElPr: '.swiper-button-prev-preview',
           }"
           :breakpoints="{
