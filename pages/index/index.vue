@@ -13,28 +13,49 @@ import CDoctorsSpecialties from "~/components/indexPage/СDoctorsSpecialties.vue
 import CDiagnostics from "~/components/indexPage/СDiagnostics.vue";
 import CReviews from "../../components/indexPage/СReviews.vue";
 import MChooseYourCity from "~/components/indexPage/MChooseYourCity.vue";
-// apiCReviews
+
 const { t } = useI18n();
 const route = useRoute();
 const settingsStore = useSettingsStore();
 
-// banner api
-const { data: newsBanner } = useAsyncData("banner", () =>
-  getNewsBannerApi.getNewsBanner()
+// api
+const getClinicSpecialtiesApi = useClinicSpecialties();
+const getDoctorsSpecialtiesApi = useDoctorsSpecialties();
+
+// fetch api
+const { data: dataClinicSpecialties } = useAsyncData("ClinicSpecialties", () =>
+  getClinicSpecialtiesApi.getClinicSpecialties()
 );
+
+const { data: dataDoctorsSpecialties } = useAsyncData(
+  "DoctorsSpecialties",
+  () => getDoctorsSpecialtiesApi.getDoctorsSpecialties()
+);
+
+// functions
+function openChooseYourCity() {
+  settingsStore.mChooseYourCity = true;
+}
 </script>
 
 <template>
   <div class="site-container">
     <CSearchHeader />
-    <CServices @openChooseYourCity="settingsStore.mChooseYourCity = true" />
+    <CServices @openChooseYourCity="openChooseYourCity" />
   </div>
+
   <CPopularDocs />
-  <CClinicSpecialties />
-  <CPopularClinic @openChooseYourCity="settingsStore.mChooseYourCity = true" />
-  <CDoctorsSpecialties />
-  <CDiagnostics @openChooseYourCity="settingsStore.mChooseYourCity = true" />
+
+  <CClinicSpecialties :clinicSpecialties="dataClinicSpecialties.data" />
+
+  <CPopularClinic @openChooseYourCity="openChooseYourCity" />
+
+  <CDoctorsSpecialties :doctorsSpecialties="dataDoctorsSpecialties.data" />
+
+  <CDiagnostics @openChooseYourCity="openChooseYourCity" />
+
   <CReviews />
+
   <MChooseYourCity v-if="settingsStore.mChooseYourCity" />
 </template>
 

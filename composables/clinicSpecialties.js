@@ -1,11 +1,9 @@
-const baseUrl = "news/placeinsite";
-
-export const useNewsPlaceInSite = () => {
+export const useClinicSpecialties = () => {
   const nuxtApp = useNuxtApp();
   const { $api } = nuxtApp;
 
   const getClinicSpecialties = async () => {
-    const res = await $api(`${baseUrl}/banner/`);
+    const res = await $api(`/clinic-specialties`);
     return res;
   };
   const getNewsLittleBanner = async () => {
@@ -14,7 +12,7 @@ export const useNewsPlaceInSite = () => {
   };
 
   return {
-    getNewsBanner,
+    getClinicSpecialties,
     getNewsLittleBanner,
   };
 };
