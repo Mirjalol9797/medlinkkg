@@ -22,6 +22,34 @@ if (process.client) {
   gtag("config", "G-T95R35MYTD");
 
   //////////////////////////////////////////////////////////////////////////////////////////////////
+  // Асинхронная загрузка Yandex.Metrika
+  script.src = "https://mc.yandex.ru/metrika/tag.js";
+  script.async = true;
+  document.head.appendChild(script);
+
+  script.onload = () => {
+    window.ym =
+      window.ym ||
+      function () {
+        (window.ym.a = window.ym.a || []).push(arguments);
+      };
+    ym.l = 1 * new Date();
+
+    // Инициализация Метрики
+    ym(99020964, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+    });
+  };
+
+  // Дополнительно: Фикс для <noscript>
+  const noscript = document.createElement("noscript");
+  noscript.innerHTML = `
+    <div><img src="https://mc.yandex.ru/watch/99020964" style="position:absolute; left:-9999px;" alt="" /></div>
+  `;
+  document.body.appendChild(noscript);
 }
 
 function siteScrollTop() {
