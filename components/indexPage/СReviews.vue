@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="bg-[#f3f3f3] py-10">
+  <div class="py-10">
     <div class="site-container">
       <div class="main-page-title">Отзывы</div>
       <div class="site-slider relative slider-reviews">

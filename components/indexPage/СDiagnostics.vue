@@ -7,7 +7,7 @@ function openChooseYourCity(e) {
 </script>
 
 <template>
-  <div class="py-10">
+  <div class="bg-[#f3f3f3] py-10">
     <div class="site-container">
       <div class="main-page-title">
         Диагностика в <span @click="openChooseYourCity">Бишкеке</span>
