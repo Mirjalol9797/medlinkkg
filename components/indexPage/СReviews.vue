@@ -11,8 +11,8 @@
           :spaceBetween="16"
           :loop="false"
           :navigation="{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextElPr: ' .swiper-button-next-preview',
+            prevElPr: '.swiper-button-prev-preview',
           }"
           :breakpoints="{
             360: {
@@ -64,10 +64,10 @@
           </SwiperSlide>
         </Swiper>
         <div
-          class="swiper-button-prev !left-[-55px] bg-white rounded-full"
+          class="swiper-button-prev swiper-button-prev-preview !left-[-55px] bg-white rounded-full"
         ></div>
         <div
-          class="swiper-button-next !right-[-55px] bg-white rounded-full"
+          class="swiper-button-next swiper-button-next-preview !right-[-55px] bg-white rounded-full"
         ></div>
       </div>
     </div>

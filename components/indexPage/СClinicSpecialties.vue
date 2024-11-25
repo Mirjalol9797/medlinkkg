@@ -61,7 +61,7 @@ const groupedData = computed(() => {
 <style lang="scss" scoped>
 .clinic-specialties {
   column-gap: 40px;
-  column-width: 200px;
+  column-width: 160px;
 
   &__wrap {
     margin-top: 0;

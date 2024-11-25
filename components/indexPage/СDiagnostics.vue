@@ -23,8 +23,8 @@ function openChooseYourCity(e) {
             disableOnInteraction: false,
           }"
           :navigation="{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next-diagnostics',
+            prevEl: '.swiper-button-prev-diagnostics',
           }"
           :breakpoints="{
             360: {
@@ -104,10 +104,10 @@ function openChooseYourCity(e) {
           </SwiperSlide>
         </Swiper>
         <div
-          class="swiper-button-prev !left-[-55px] bg-white rounded-full"
+          class="swiper-button-prev swiper-button-prev-diagnostics !left-[-55px] bg-white rounded-full"
         ></div>
         <div
-          class="swiper-button-next !right-[-55px] bg-white rounded-full"
+          class="swiper-button-next swiper-button-next-diagnostics !right-[-55px] bg-white rounded-full"
         ></div>
       </div>
     </div>
