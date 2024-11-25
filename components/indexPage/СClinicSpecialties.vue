@@ -14,8 +14,6 @@ const groupedData = computed(() => {
     a.name_ru.localeCompare(b.name_ru, "ru")
   );
 
-  console.log(sortedData);
-
   // Группируем по первой букве
   return sortedData.reduce((acc, item) => {
     const firstLetter = item.name_ru[0].toUpperCase(); // Первая буква

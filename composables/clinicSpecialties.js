@@ -6,13 +6,8 @@ export const useClinicSpecialties = () => {
     const res = await $api(`/clinic-specialties`);
     return res;
   };
-  const getNewsLittleBanner = async () => {
-    const res = await $api(`${baseUrl}/little_banner/`);
-    return res;
-  };
 
   return {
     getClinicSpecialties,
-    getNewsLittleBanner,
   };
 };
