@@ -39,7 +39,7 @@ function openChooseYourCity(e) {
         >
           <SwiperSlide>
             <nuxt-link :to="localePath(`/`)" class="relative">
-              <div class="bg-white h-[120px] py-3 px-6">
+              <div class="bg-white h-[120px] py-3 px-6 rounded-lg">
                 <img
                   src="@/public/icons/mainPage/popularClinics/clinic-1.png"
                   alt="clinic"
@@ -53,7 +53,7 @@ function openChooseYourCity(e) {
           </SwiperSlide>
           <SwiperSlide>
             <nuxt-link :to="localePath(`/`)" class="relative">
-              <div class="bg-white h-[120px] py-3 px-6">
+              <div class="bg-white h-[120px] py-3 px-6 rounded-lg">
                 <img
                   src="@/public/icons/mainPage/popularClinics/clinic-2.png"
                   alt="clinic"
@@ -67,7 +67,7 @@ function openChooseYourCity(e) {
           </SwiperSlide>
           <SwiperSlide>
             <nuxt-link :to="localePath(`/`)" class="relative">
-              <div class="bg-white h-[120px] py-3 px-6">
+              <div class="bg-white h-[120px] py-3 px-6 rounded-lg">
                 <img
                   src="@/public/icons/mainPage/popularClinics/clinic-3.png"
                   alt="clinic"
@@ -81,7 +81,7 @@ function openChooseYourCity(e) {
           </SwiperSlide>
           <SwiperSlide>
             <nuxt-link :to="localePath(`/`)" class="relative">
-              <div class="bg-white h-[120px] py-3 px-6">
+              <div class="bg-white h-[120px] py-3 px-6 rounded-lg">
                 <img
                   src="@/public/icons/mainPage/popularClinics/clinic-4.png"
                   alt="clinic"
@@ -95,7 +95,7 @@ function openChooseYourCity(e) {
           </SwiperSlide>
           <SwiperSlide>
             <nuxt-link :to="localePath(`/`)" class="relative">
-              <div class="bg-white h-[120px] py-3 px-6">
+              <div class="bg-white h-[120px] py-3 px-6 rounded-lg">
                 <img
                   src="@/public/icons/mainPage/popularClinics/clinic-5.png"
                   alt="clinic"
@@ -109,7 +109,7 @@ function openChooseYourCity(e) {
           </SwiperSlide>
           <SwiperSlide>
             <nuxt-link :to="localePath(`/`)" class="relative">
-              <div class="bg-white h-[120px] py-3 px-6">
+              <div class="bg-white h-[120px] py-3 px-6 rounded-lg">
                 <img
                   src="@/public/icons/mainPage/popularClinics/clinic-6.png"
                   alt="clinic"

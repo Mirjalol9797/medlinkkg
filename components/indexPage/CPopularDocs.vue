@@ -35,13 +35,13 @@
                   src="@/public/icons/mainPage/popularDocs/terapevt.jpg"
                   alt="terapevt"
                   title="terapevt"
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                   format="webp"
                 />
               </div>
               <div
-                class="font-medium absolute bg-[#6486fa] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+                class="font-medium absolute rounded-b-lg bg-[#6486fa] z-10 bottom-0 w-full text-center text-white py-2 text-base"
               >
                 Терапевт
               </div>
@@ -54,13 +54,13 @@
                   src="@/public/icons/mainPage/popularDocs/kardiolog.jpg"
                   alt="kardiolog"
                   title="kardiolog"
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                   format="webp"
                 />
               </div>
               <div
-                class="font-medium absolute bg-[#ff597f] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+                class="font-medium absolute rounded-b-lg bg-[#ff597f] z-10 bottom-0 w-full text-center text-white py-2 text-base"
               >
                 Кардиолог
               </div>
@@ -73,13 +73,13 @@
                   src="@/public/icons/mainPage/popularDocs/pediatr.jpg"
                   alt="pediatr"
                   title="pediatr"
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                   format="webp"
                 />
               </div>
               <div
-                class="font-medium absolute bg-[#4c6ddf] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+                class="font-medium absolute rounded-b-lg bg-[#4c6ddf] z-10 bottom-0 w-full text-center text-white py-2 text-base"
               >
                 Педиатр
               </div>
@@ -92,13 +92,13 @@
                   src="@/public/icons/mainPage/popularDocs/lor.jpg"
                   alt="lor"
                   title="lor"
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                   format="webp"
                 />
               </div>
               <div
-                class="font-medium absolute bg-[#ec8d4e] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+                class="font-medium absolute rounded-b-lg bg-[#ec8d4e] z-10 bottom-0 w-full text-center text-white py-2 text-base"
               >
                 ЛОР
               </div>
@@ -111,13 +111,13 @@
                   src="@/public/icons/mainPage/popularDocs/nevrolog.jpg"
                   alt="nevrolog"
                   title="nevrolog"
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                   format="webp"
                 />
               </div>
               <div
-                class="font-medium absolute bg-[#fb6285] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+                class="font-medium absolute rounded-b-lg bg-[#fb6285] z-10 bottom-0 w-full text-center text-white py-2 text-base"
               >
                 Невролог
               </div>
@@ -130,13 +130,13 @@
                   src="@/public/icons/mainPage/popularDocs/okulist.jpg"
                   alt="okulist"
                   title="okulist"
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                   format="webp"
                 />
               </div>
               <div
-                class="font-medium absolute bg-[#6e8efb] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+                class="font-medium absolute rounded-b-lg bg-[#6e8efb] z-10 bottom-0 w-full text-center text-white py-2 text-base"
               >
                 Офтальмолог
               </div>
@@ -149,13 +149,13 @@
                   src="@/public/icons/mainPage/popularDocs/okulist.jpg"
                   alt="okulist"
                   title="okulist"
-                  class="w-full h-full object-cover"
+                  class="w-full h-full object-cover rounded-lg"
                   loading="lazy"
                   format="webp"
                 />
               </div>
               <div
-                class="font-medium absolute bg-[#0031ff] z-10 top-[40%] w-full text-center text-white py-2 text-base"
+                class="font-medium absolute rounded-b-lg bg-[#ec8d4e] z-10 bottom-0 w-full text-center text-white py-2 text-base"
               >
                 Посмотреть все
               </div>

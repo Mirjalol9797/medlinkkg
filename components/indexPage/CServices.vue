@@ -14,7 +14,7 @@ function openChooseYourCity(e) {
     </h1>
     <div class="grid grid-cols-6 gap-4">
       <div
-        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-2"
+        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-2 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div>
           <div class="font-medium text-lg">Врач</div>
@@ -24,7 +24,9 @@ function openChooseYourCity(e) {
           <img src="@/public/icons/mainPage/services/doc.png" alt="doc" />
         </div>
       </div>
-      <div class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative">
+      <div
+        class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+      >
         <div class="font-medium text-lg">Диагностика</div>
         <div>МРТ, МСКТ, УЗИ, ЭХОКГ, Рентген</div>
         <img
@@ -33,7 +35,9 @@ function openChooseYourCity(e) {
           class="w-[50px] absolute bottom-1 right-1"
         />
       </div>
-      <div class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative">
+      <div
+        class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+      >
         <div class="font-medium text-lg">Анализы</div>
         <div>Общеклиническиеи прочие анализы</div>
         <img
@@ -43,7 +47,7 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4"
+        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div>
           <div class="font-medium text-lg">Болезни</div>
@@ -57,7 +61,7 @@ function openChooseYourCity(e) {
         </div>
       </div>
       <div
-        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4"
+        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div>
           <div class="font-medium text-lg">Клиники</div>
@@ -73,7 +77,9 @@ function openChooseYourCity(e) {
           />
         </div>
       </div>
-      <div class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative">
+      <div
+        class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+      >
         <div class="font-medium text-lg">Услуги</div>
         <div>
           Медицинские услугии <br />
@@ -85,7 +91,9 @@ function openChooseYourCity(e) {
           class="w-[50px] absolute bottom-1 right-1"
         />
       </div>
-      <div class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative">
+      <div
+        class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+      >
         <div class="font-medium text-lg">Лекарства</div>
         <div>
           Препараты <br />
@@ -98,7 +106,7 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4"
+        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div>
           <div class="font-medium text-lg">Симптомы</div>

@@ -26,7 +26,7 @@ onMounted(() => {});
         <li>
           <nuxt-link
             to="/"
-            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
           >
             Врачи
           </nuxt-link>
@@ -34,7 +34,7 @@ onMounted(() => {});
         <li>
           <nuxt-link
             to="/"
-            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
           >
             Клиники
           </nuxt-link>
@@ -42,7 +42,7 @@ onMounted(() => {});
         <li>
           <nuxt-link
             to="/"
-            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
           >
             Диагностика
           </nuxt-link>
@@ -50,7 +50,7 @@ onMounted(() => {});
         <li>
           <nuxt-link
             to="/"
-            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
           >
             Услуги
           </nuxt-link>
@@ -58,7 +58,7 @@ onMounted(() => {});
         <li>
           <nuxt-link
             to="/"
-            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
           >
             Препараты
           </nuxt-link>
@@ -66,7 +66,7 @@ onMounted(() => {});
         <li>
           <nuxt-link
             to="/"
-            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
           >
             Болезни
           </nuxt-link>
@@ -74,7 +74,7 @@ onMounted(() => {});
         <li>
           <nuxt-link
             to="/"
-            class="hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
           >
             Еще
           </nuxt-link>
