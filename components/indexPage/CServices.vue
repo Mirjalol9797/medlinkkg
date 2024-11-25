@@ -1,10 +1,16 @@
-<script setup></script>
+<script setup>
+const emit = defineEmits(["openChooseYourCity"]);
+
+function openChooseYourCity(e) {
+  emit("openChooseYourCity", e);
+}
+</script>
 <template>
   <div class="mb-14">
     <h1 class="main-page-title">
       Забота о вашем здоровье - ищите <br />
       клинику, врача, лекарства в
-      <span>Бишкеке</span>
+      <span @click="openChooseYourCity">Бишкеке</span>
     </h1>
     <div class="grid grid-cols-6 gap-4">
       <div

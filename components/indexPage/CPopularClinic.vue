@@ -1,10 +1,16 @@
-<script setup></script>
+<script setup>
+const emit = defineEmits(["openChooseYourCity"]);
+
+function openChooseYourCity(e) {
+  emit("openChooseYourCity", e);
+}
+</script>
 
 <template>
   <div class="bg-[#f3f3f3] py-10">
     <div class="site-container">
       <div class="main-page-title">
-        Популярные клиники в <span>Бишкеке</span>
+        Популярные клиники в <span @click="openChooseYourCity">Бишкеке</span>
       </div>
       <div class="site-slider relative">
         <Swiper

@@ -9,7 +9,7 @@ const settingsStore = useSettingsStore();
         class="flex-center-between text-[#515459] bg-custom-gradient py-5 pl-6 pr-5 text-xl font-semibold rounded-t-lg"
       >
         <div>Выберите свой город</div>
-        <button @click="settingsStore.howDoesItWorkModal = false">
+        <button @click="settingsStore.mChooseYourCity = false">
           <img src="/icons/modal/close.svg" alt="close" />
         </button>
       </div>

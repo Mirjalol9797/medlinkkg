@@ -16,6 +16,7 @@ import MChooseYourCity from "~/components/indexPage/MChooseYourCity.vue";
 // apiCReviews
 const { t } = useI18n();
 const route = useRoute();
+const settingsStore = useSettingsStore();
 
 // banner api
 const { data: newsBanner } = useAsyncData("banner", () =>
@@ -26,15 +27,15 @@ const { data: newsBanner } = useAsyncData("banner", () =>
 <template>
   <div class="site-container">
     <CSearchHeader />
-    <CServices />
+    <CServices @openChooseYourCity="settingsStore.mChooseYourCity = true" />
   </div>
   <CPopularDocs />
   <CClinicSpecialties />
-  <CPopularClinic />
+  <CPopularClinic @openChooseYourCity="settingsStore.mChooseYourCity = true" />
   <CDoctorsSpecialties />
-  <CDiagnostics />
+  <CDiagnostics @openChooseYourCity="settingsStore.mChooseYourCity = true" />
   <CReviews />
-  <MChooseYourCity />
+  <MChooseYourCity v-if="settingsStore.mChooseYourCity" />
 </template>
 
 <style lang="scss" scoped></style>

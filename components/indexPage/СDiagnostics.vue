@@ -1,9 +1,17 @@
-<script setup></script>
+<script setup>
+const emit = defineEmits(["openChooseYourCity"]);
+
+function openChooseYourCity(e) {
+  emit("openChooseYourCity", e);
+}
+</script>
 
 <template>
   <div class="py-10">
     <div class="site-container">
-      <div class="main-page-title">Диагностика в <span>Бишкеке</span></div>
+      <div class="main-page-title">
+        Диагностика в <span @click="openChooseYourCity">Бишкеке</span>
+      </div>
       <div class="site-slider relative slider-diagnostics">
         <Swiper
           :modules="[SwiperAutoplay, SwiperNavigation]"
