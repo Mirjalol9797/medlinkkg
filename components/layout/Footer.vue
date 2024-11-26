@@ -6,12 +6,12 @@
       <div class="flex justify-between footer-wrap">
         <ul class="footer-nav">
           <li class="footer-nav__item">
-            <nuxt-link to="/" class="footer-nav__link"
+            <nuxt-link to="/" class="footer-nav__link border-b border-black"
               >Добавить клинику</nuxt-link
             >
           </li>
           <li class="mb-4">
-            <nuxt-link to="/" class="footer-nav__link"
+            <nuxt-link to="/" class="footer-nav__link border-b border-black"
               >Добавить врача</nuxt-link
             >
           </li>
