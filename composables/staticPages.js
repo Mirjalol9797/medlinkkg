@@ -4,7 +4,6 @@ export const useStaticPages = () => {
 
   const getStaticPagesWithSlug = async (slug) => {
     const res = await $api(`/static-pages/${slug}`);
-    console.log(res);
 
     return res;
   };

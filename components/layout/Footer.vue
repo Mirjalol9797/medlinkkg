@@ -16,17 +16,23 @@
             >
           </li>
           <li class="mb-4">
-            <nuxt-link to="/" class="footer-nav__link"
+            <nuxt-link
+              :to="localePath(`/user-agreement`)"
+              class="footer-nav__link"
               >Пользовательское соглашение</nuxt-link
             >
           </li>
           <li class="mb-4">
-            <nuxt-link to="/" class="footer-nav__link"
+            <nuxt-link
+              :to="localePath(`/privacy-policy`)"
+              class="footer-nav__link"
               >Политика конфиденциальности</nuxt-link
             >
           </li>
           <li class="mb-4">
-            <nuxt-link to="/" class="footer-nav__link"
+            <nuxt-link
+              :to="localePath(`/personal-data`)"
+              class="footer-nav__link"
               >Обработка персональных данных</nuxt-link
             >
           </li>
@@ -56,7 +62,9 @@
         </ul>
         <ul class="footer-nav">
           <li class="footer-nav__item">
-            <nuxt-link to="/" class="footer-nav__link"> О проекте </nuxt-link>
+            <nuxt-link :to="localePath(`/about`)" class="footer-nav__link">
+              О проекте
+            </nuxt-link>
           </li>
           <li class="footer-nav__item">
             <nuxt-link to="/" class="footer-nav__link">Контакты</nuxt-link>
@@ -64,25 +72,25 @@
           <li class="footer-nav__item font-semibold">
             <span>Социальные сети</span>
             <span class="flex-center gap-3 mt-2">
-              <nuxt-link to="/">
+              <nuxt-link to="https://t.me/medlinkkg">
                 <img
                   src="@/public/icons/mainPage/social/telegam.png"
                   alt="telegam"
-                  class="w-5"
+                  class="w-6"
                 />
               </nuxt-link>
               <nuxt-link to="/">
                 <img
                   src="@/public/icons/mainPage/social/instagram.png"
                   alt="instagram"
-                  class="w-5"
+                  class="w-[22px]"
                 />
               </nuxt-link>
               <nuxt-link to="/">
                 <img
                   src="@/public/icons/mainPage/social/whatsap.png"
                   alt="whatsap"
-                  class="w-5"
+                  class="w-[22px]"
                 />
               </nuxt-link>
             </span>
@@ -95,17 +103,36 @@
           </li>
         </ul>
         <ul class="footer-nav">
+          <li class="footer-nav__item !font-semibold !mb-6 text-lg">Справка</li>
           <li class="footer-nav__item">
-            <nuxt-link to="/" class="footer-nav__link"> Пациенту </nuxt-link>
+            <nuxt-link
+              :to="localePath(`/to-the-patient`)"
+              class="footer-nav__link"
+            >
+              Пациентам
+            </nuxt-link>
           </li>
           <li class="footer-nav__item">
-            <nuxt-link to="/" class="footer-nav__link"> Врачу </nuxt-link>
+            <nuxt-link
+              :to="localePath(`/to-the-doctor`)"
+              class="footer-nav__link"
+            >
+              Врачам
+            </nuxt-link>
           </li>
           <li class="footer-nav__item">
-            <nuxt-link to="/" class="footer-nav__link"> Клинике </nuxt-link>
+            <nuxt-link
+              :to="localePath(`/help-for-clinics`)"
+              class="footer-nav__link"
+            >
+              Клиникам
+            </nuxt-link>
           </li>
           <li class="footer-nav__item">
-            <nuxt-link to="/" class="footer-nav__link">
+            <nuxt-link
+              :to="localePath(`/publication`)"
+              class="footer-nav__link"
+            >
               Публикация материалов
             </nuxt-link>
           </li>
