@@ -50,6 +50,15 @@ if (process.client) {
     <div><img src="https://mc.yandex.ru/watch/99020964" style="position:absolute; left:-9999px;" alt="" /></div>
   `;
   document.body.appendChild(noscript);
+
+  //////////////////////////////////////////////////////////////////////////////////////////////////
+  // для yandex рекламных блоков РСЯ
+  window.yaContextCb = window.yaContextCb || [];
+
+  // Подключение скрипта Yandex Ads
+  script.src = "https://yandex.ru/ads/system/context.js";
+  script.async = true;
+  document.head.appendChild(script);
 }
 
 function siteScrollTop() {

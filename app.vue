@@ -11,7 +11,7 @@
     <Meta name="og:type" property="og:type" content="website" />
     <Meta name="og:site_name" property="og:site_name" content="medlink" />
     <Meta property="twitter:card" content="summary_large_image" />
-    <Meta name="copyright" content="copyright © 2024, medlink.kg/" />
+    <Meta name="copyright" content="copyright © 2024, medlink.kg" />
     <Meta name="google-adsense-account" content="ca-pub-3990212606361557" />
     <Meta
       name="google-site-verification"
