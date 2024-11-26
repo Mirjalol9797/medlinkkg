@@ -2,7 +2,7 @@
 <template>
   <div class="bg-[#f3f3f3] py-10">
     <div class="site-container">
-      <div class="main-page-title">Популярные специальности врачей</div>
+      <h2 class="main-page-title">Популярные специальности врачей</h2>
       <div class="site-slider relative">
         <Swiper
           :modules="[SwiperAutoplay, SwiperNavigation]"

@@ -3,7 +3,7 @@
 <template>
   <div class="py-10">
     <div class="site-container">
-      <div class="main-page-title">Отзывы</div>
+      <h2 class="main-page-title">Отзывы</h2>
       <div class="site-slider relative slider-reviews">
         <Swiper
           :modules="[SwiperAutoplay, SwiperNavigation]"

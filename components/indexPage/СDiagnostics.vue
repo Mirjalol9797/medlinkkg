@@ -9,9 +9,9 @@ function openChooseYourCity(e) {
 <template>
   <div class="bg-[#f3f3f3] py-10">
     <div class="site-container">
-      <div class="main-page-title">
+      <h2 class="main-page-title">
         Диагностика в <span @click="openChooseYourCity">Бишкеке</span>
-      </div>
+      </h2>
       <div class="site-slider relative slider-diagnostics">
         <Swiper
           :modules="[SwiperAutoplay, SwiperNavigation]"

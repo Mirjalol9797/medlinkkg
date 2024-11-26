@@ -28,7 +28,7 @@ const groupedData = computed(() => {
 <template>
   <div class="py-14">
     <div class="site-container">
-      <div class="main-page-title">Специальности врачей</div>
+      <h2 class="main-page-title">Специальности врачей</h2>
       <div class="clinic-specialties">
         <ul
           :data-first-letter="letter"
