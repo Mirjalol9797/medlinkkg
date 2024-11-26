@@ -72,7 +72,7 @@
           <li class="footer-nav__item font-semibold">
             <span>Социальные сети</span>
             <span class="flex-center gap-3 mt-2">
-              <nuxt-link to="https://t.me/medlinkkg">
+              <nuxt-link to="https://t.me/medlinkkg" rel="nofollow">
                 <img
                   src="@/public/icons/mainPage/social/telegam.png"
                   alt="telegam"
