@@ -13,6 +13,7 @@ import CDoctorsSpecialties from "~/components/indexPage/СDoctorsSpecialties.vue
 import CDiagnostics from "~/components/indexPage/СDiagnostics.vue";
 import CReviews from "../../components/indexPage/СReviews.vue";
 import MChooseYourCity from "~/components/indexPage/MChooseYourCity.vue";
+import SeoSettings from "~/components/Seo/SeoSettings.vue";
 
 const { t } = useI18n();
 const route = useRoute();
@@ -57,6 +58,9 @@ function openChooseYourCity() {
   <CReviews />
 
   <MChooseYourCity v-if="settingsStore.mChooseYourCity" />
+
+  <!-- seo -->
+  <SeoSettings />
 </template>
 
 <style lang="scss" scoped></style>
