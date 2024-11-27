@@ -14,16 +14,24 @@ console.log(route);
 <template>
   <div class="py-14 static-page">
     <div class="site-container">
-      <div class="mb-6 480:text-xs 480:mb-4">
+      <div class="flex gap-2 mb-6 480:text-xs 480:mb-4">
         <nuxt-link to="/" class="font-medium text-[#3f78c6]" title="Medlink.kg">
           Medlink.kg
         </nuxt-link>
-        <span> - {{ dataStaticPage?.data?.name }}</span>
+        <img
+          src="@/public/icons/general/arrow-left-black.svg"
+          alt="arrow"
+          class="w-4"
+        />
+        <span> {{ dataStaticPage?.data?.name }}</span>
       </div>
       <h1 class="mb-8 text-2xl 768:text-lg 768:mb-6">
         {{ dataStaticPage?.data?.name }}
       </h1>
-      <div v-html="dataStaticPage?.data?.content"></div>
+      <div
+        v-html="dataStaticPage?.data?.content"
+        class="bg-[#f3f3f3] p-5"
+      ></div>
     </div>
   </div>
 
@@ -66,20 +74,24 @@ console.log(route);
 <style lang="scss">
 .static-page {
   h2 {
-    margin-bottom: 12px;
-    font-size: 18px;
+    margin: 16px 0px;
+    font-size: 20px;
     line-height: 24px;
+    font-weight: 700;
   }
   p {
-    margin-bottom: 12px;
+    margin: 14px 0;
     line-height: 24px;
   }
   ul {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 40px;
     list-style: disc;
     li {
       margin-bottom: 12px;
     }
+  }
+  a {
+    color: #008bd8;
   }
 }
 </style>
