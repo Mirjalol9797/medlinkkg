@@ -8,6 +8,8 @@ const getStaticPagesApi = useStaticPages();
 const { data: dataStaticPage } = useAsyncData("StaticPage", () =>
   getStaticPagesApi.getStaticPagesWithSlug(route.params.slug)
 );
+
+console.log(route);
 </script>
 <template>
   <div class="py-14">
@@ -16,44 +18,47 @@ const { data: dataStaticPage } = useAsyncData("StaticPage", () =>
         <nuxt-link to="/" class="font-medium text-[#3f78c6]" title="Medlink.kg">
           Medlink.kg
         </nuxt-link>
-        <span> - {{ dataStaticPage.data.name }}</span>
+        <span> - {{ dataStaticPage?.data?.name }}</span>
       </div>
       <h1 class="mb-8 text-2xl 768:text-lg 768:mb-6">
-        {{ dataStaticPage.data.name }}
+        {{ dataStaticPage?.data?.name }}
       </h1>
-      <div v-html="dataStaticPage.data.content"></div>
+      <div v-html="dataStaticPage?.data?.content"></div>
     </div>
   </div>
 
   <!-- seo -->
   <Head>
-    <Title>{{ dataStaticPage.data.meta_name }}</Title>
-    <Meta name="title" :content="dataStaticPage.data.meta_name" />
-    <Meta name="description" :content="dataStaticPage.data.meta_description" />
+    <Title>{{ dataStaticPage?.data?.meta_name }}</Title>
+    <Meta name="title" :content="dataStaticPage?.data?.meta_name" />
+    <Meta
+      name="description"
+      :content="dataStaticPage?.data?.meta_description"
+    />
     <Meta
       name="og:title"
       property="og:title"
-      :content="dataStaticPage.data.meta_name"
+      :content="dataStaticPage?.data?.meta_name"
     />
     <Meta
       name="og:description"
       property="og:description"
-      :content="dataStaticPage.data.meta_description"
+      :content="dataStaticPage?.data?.meta_description"
     />
     <Meta property="og:image" content="https://medlink.kg/site-logo.png" />
     <Meta
       property="og:url"
-      :content="`https://medlink.kg/${dataStaticPage.data.slug}`"
+      :content="`https://medlink.kg/${dataStaticPage?.data?.slug}`"
     />
-    <Meta property="twitter:title" :content="dataStaticPage.data.meta_name" />
+    <Meta property="twitter:title" :content="dataStaticPage?.data?.meta_name" />
     <Meta
       property="twitter:description"
-      :content="dataStaticPage.data.meta_description"
+      :content="dataStaticPage?.data?.meta_description"
     />
     <Meta property="twitter:image" content="https://medlink.kg/site-logo.png" />
     <Meta
       property="twitter:url"
-      :content="`https://medlink.kg/${dataStaticPage.data.slug}`"
+      :content="`https://medlink.kg/${dataStaticPage?.data?.slug}`"
     />
     <Link rel="canonical" href="https://medlink.kg" />
   </Head>
