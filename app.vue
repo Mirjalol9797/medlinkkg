@@ -16,5 +16,6 @@
     <Link rel="icon" type="image/x-icon" href="favicon.ico" />
     <Link rel="preload" href="https://fonts.gstatic.com" />
   </Head>
+
   <NuxtLayout></NuxtLayout>
 </template>

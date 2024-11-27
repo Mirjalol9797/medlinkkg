@@ -52,8 +52,9 @@ if (process.client) {
   document.body.appendChild(noscript);
 
   //////////////////////////////////////////////////////////////////////////////////////////////////
-  // для yandex рекламных блоков РСЯ
+
   window.yaContextCb = window.yaContextCb || [];
+  console.log(window.yaContextCb);
 
   // Подключение скрипта Yandex Ads
   script.src = "https://yandex.ru/ads/system/context.js";
