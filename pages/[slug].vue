@@ -12,7 +12,7 @@ const { data: dataStaticPage } = useAsyncData("StaticPage", () =>
 console.log(route);
 </script>
 <template>
-  <div class="py-14">
+  <div class="py-14 static-page">
     <div class="site-container">
       <div class="mb-6 480:text-xs 480:mb-4">
         <nuxt-link to="/" class="font-medium text-[#3f78c6]" title="Medlink.kg">
@@ -63,4 +63,23 @@ console.log(route);
     <Link rel="canonical" href="https://medlink.kg" />
   </Head>
 </template>
-<style lang="scss"></style>
+<style lang="scss">
+.static-page {
+  h2 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  p {
+    margin-bottom: 12px;
+    line-height: 24px;
+  }
+  ul {
+    margin: 0 0 0 20px;
+    list-style: disc;
+    li {
+      margin-bottom: 12px;
+    }
+  }
+}
+</style>
