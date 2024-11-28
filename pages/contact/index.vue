@@ -20,10 +20,10 @@
       <div class="bg-[#f3f3f3] p-5 rounded-md 768:px-3">
         <div class="flex gap-10 768:flex-col 768:gap-6">
           <div class="w-1/2 768:w-full">
-            <div class="text-base font-semibold mb-8">
+            <h2 class="text-base font-semibold mb-8">
               Если вам нужна дополнительная информация о нашем сервисе,
               свяжитесь с нами удобным для вас способом.
-            </div>
+            </h2>
             <div class="font-medium inline-flex flex-col">
               <a
                 href="mailto:info@medlink.kg"
@@ -48,10 +48,10 @@
             </div>
           </div>
           <div class="w-1/2 768:w-full">
-            <div class="text-base font-semibold mb-8">
+            <h2 class="text-base font-semibold mb-8">
               Отправьте нам свои контактные данные используя форму ниже и мы
               свяжемся с вами в самое ближайшее время.
-            </div>
+            </h2>
             <div class="contact-form">
               <UiHInput placeholder="Выше имя" class="mb-6" />
               <div class="grid grid-cols-2 gap-6 768:gap-3">
