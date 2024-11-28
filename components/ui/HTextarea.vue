@@ -89,7 +89,6 @@ function updateValue(e) {
 
   textarea {
     padding-top: 14px;
-    box-shadow: 0 0 0 1px #18a53c;
     background-color: transparent;
     z-index: 2;
     position: relative;
@@ -103,10 +102,6 @@ function updateValue(e) {
     line-height: 20px;
     outline: none;
     color: #767676;
-
-    &:focus {
-      box-shadow: 0 0 0 2px #18a53c;
-    }
   }
 
   textarea {

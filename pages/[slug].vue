@@ -8,8 +8,6 @@ const getStaticPagesApi = useStaticPages();
 const { data: dataStaticPage } = useAsyncData("StaticPage", () =>
   getStaticPagesApi.getStaticPagesWithSlug(route.params.slug)
 );
-
-console.log(route);
 </script>
 <template>
   <div class="py-14 static-page">
@@ -25,12 +23,14 @@ console.log(route);
         />
         <span> {{ dataStaticPage?.data?.name }}</span>
       </div>
-      <h1 class="mb-8 text-2xl 768:text-lg 768:mb-6">
+
+      <h1 class="h1-title">
         {{ dataStaticPage?.data?.name }}
       </h1>
+
       <div
         v-html="dataStaticPage?.data?.content"
-        class="bg-[#f3f3f3] p-5"
+        class="bg-[#f3f3f3] p-5 rounded-md"
       ></div>
     </div>
   </div>
