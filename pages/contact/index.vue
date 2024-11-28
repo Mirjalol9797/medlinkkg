@@ -12,10 +12,10 @@
           alt="arrow"
           class="w-4"
         />
-        <span>Контакта</span>
+        <span>Контакты</span>
       </div>
 
-      <h1 class="h1-title">Контакта</h1>
+      <h1 class="h1-title">Контакты</h1>
 
       <div class="bg-[#f3f3f3] p-5 rounded-md 768:px-3">
         <div class="flex gap-10 768:flex-col 768:gap-6">
