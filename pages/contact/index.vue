@@ -1,4 +1,38 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted } from "vue";
+import { useVuelidate } from "@vuelidate/core";
+import { required, minLength, email } from "@vuelidate/validators";
+
+const errorText = ref("Обязательно для заполнения");
+const loaderBtn = ref(false);
+
+const contactForm = ref({
+  firstName: "",
+  email: "",
+  phone: "+996 ", //+996 000 000000
+  comment: "",
+});
+
+const contactFormError = ref({
+  firstName: { required },
+  email: { required, email },
+  phone: { required, minLength: minLength(17) },
+  comment: { required },
+});
+
+const v$1 = useVuelidate(contactFormError, contactForm);
+
+async function sendContactData() {
+  loaderBtn.value = true;
+  let validate = v$1.value.$invalid;
+  v$1.value.$touch();
+  if (!validate) {
+    console.log(contactForm.value);
+  }
+
+  loaderBtn.value = false;
+}
+</script>
 
 <template>
   <div class="contact-page py-14">
@@ -53,14 +87,43 @@
               свяжемся с вами в самое ближайшее время.
             </h2>
             <div class="contact-form">
-              <UiHInput placeholder="Выше имя" class="mb-6" />
+              <UiHInput
+                v-model="contactForm.firstName"
+                :error="v$1.firstName.$error"
+                :errorText="errorText"
+                placeholder="Выше имя"
+                class="mb-6"
+              />
               <div class="grid grid-cols-2 gap-6 768:gap-3">
-                <UiHInput placeholder="Ваш E-mail" class="mb-6" />
-                <UiHInput placeholder="Мобильный телефон" class="mb-6" />
+                <UiHInput
+                  placeholder="Ваш E-mail"
+                  class="mb-6"
+                  v-model="contactForm.email"
+                  :error="v$1.email.$error"
+                  :errorText="errorText"
+                  type="email"
+                />
+
+                <UiHInput
+                  v-model="contactForm.phone"
+                  :error="v$1.phone.$error"
+                  :errorText="errorText"
+                  placeholder="Мобильный телефон"
+                  class="mb-6"
+                  dataMaska="+(996) ### ######"
+                />
               </div>
-              <UiHTextarea placeholder="Ваше сообщение" class="mb-6" />
+              <UiHTextarea
+                v-model="contactForm.comment"
+                :error="v$1.comment.$error"
+                :errorText="errorText"
+                placeholder="Ваше сообщение"
+                class="mb-6"
+              />
               <button
                 class="bg-[#f39] text-white w-full rounded-lg py-3 font-semibold text-base"
+                :class="loaderBtn ? 'site-btn-loader' : ''"
+                @click="sendContactData"
               >
                 Отправить
               </button>

@@ -114,8 +114,9 @@ function updateValue(e) {
   }
 
   &__error {
-    input {
-      box-shadow: 0 0 0 1px #e01f19 !important;
+    .form-item-input {
+      box-shadow: 0 0 0 1px #e01f19;
+      border: 0;
     }
   }
   .input-filter {
