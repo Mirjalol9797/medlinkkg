@@ -61,22 +61,34 @@ async function sendContactData() {
             <div class="font-medium inline-flex flex-col">
               <a
                 href="mailto:info@medlink.kg"
-                class="mb-4 inline-block"
+                class="mb-4 flex gap-3"
                 rel="nofollow"
               >
-                <img src="" alt="" />
+                <img
+                  src="@/public/icons/mainPage/social/pochta.svg"
+                  alt="pochta"
+                  class="w-5"
+                />
                 <span>info@medlink.kg</span>
               </a>
               <a
                 href="https://t.me/medlinkkg"
-                class="mb-4 inline-block"
+                class="mb-4 flex gap-3"
                 rel="nofollow"
               >
-                <img src="" alt="" />
+                <img
+                  src="@/public/icons/mainPage/social/telegam.png"
+                  alt="telegam"
+                  class="w-[22px]"
+                />
                 <span>Telegram</span>
               </a>
-              <a href="/" class="mb-4 inline-block" rel="nofollow">
-                <img src="" alt="" />
+              <a href="/" class="mb-4 flex gap-3" rel="nofollow">
+                <img
+                  src="@/public/icons/mainPage/social/whatsap.png"
+                  alt="whatsapp"
+                  class="w-5"
+                />
                 <span>Whatsap</span>
               </a>
             </div>

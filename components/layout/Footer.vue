@@ -67,7 +67,7 @@
             </nuxt-link>
           </li>
           <li class="footer-nav__item">
-            <nuxt-link :to="localePath('/contact')" class="footer-nav__link"
+            <nuxt-link :to="localePath('/contacts')" class="footer-nav__link"
               >Контакты</nuxt-link
             >
           </li>
