@@ -13,7 +13,7 @@
     <Meta property="twitter:card" content="summary_large_image" />
     <Meta name="copyright" content="copyright © 2024, medlink.kg" />
 
-    <Link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <Link rel="icon" type="image/x-icon" href="favicon.ico?v=1" />
     <Link rel="preload" href="https://fonts.gstatic.com" />
   </Head>
 
