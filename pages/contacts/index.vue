@@ -2,22 +2,27 @@
 import { ref, onMounted } from "vue";
 import { useVuelidate } from "@vuelidate/core";
 import { required, minLength, email } from "@vuelidate/validators";
+import NotificationModal from "~/components/modals/NotificationModal.vue";
 
 const errorText = ref("Обязательно для заполнения");
 const loaderBtn = ref(false);
+const settingsStore = useSettingsStore();
+
+// composables
+const { submitContact } = useContactPage();
 
 const contactForm = ref({
-  firstName: "",
+  fullname: "",
   email: "",
   phone: "+996 ", //+996 000 000000
-  comment: "",
+  message: "",
 });
 
 const contactFormError = ref({
-  firstName: { required },
+  fullname: { required },
   email: { required, email },
-  phone: { required, minLength: minLength(17) },
-  comment: { required },
+  phone: { required, minLength: minLength(15) },
+  message: { required },
 });
 
 const v$1 = useVuelidate(contactFormError, contactForm);
@@ -27,7 +32,17 @@ async function sendContactData() {
   let validate = v$1.value.$invalid;
   v$1.value.$touch();
   if (!validate) {
-    console.log(contactForm.value);
+    const response = await submitContact(contactForm.value);
+    settingsStore.notificationModal = true;
+
+    contactForm.value = {
+      fullname: "",
+      email: "",
+      phone: "+996 ",
+      message: "",
+    };
+
+    v$1.value.$reset();
   }
 
   loaderBtn.value = false;
@@ -100,16 +115,17 @@ async function sendContactData() {
             </h2>
             <div class="contact-form">
               <UiHInput
-                v-model="contactForm.firstName"
-                :error="v$1.firstName.$error"
+                v-model="contactForm.fullname"
+                :error="v$1.fullname.$error"
                 :errorText="errorText"
                 placeholder="Выше имя"
                 class="mb-6"
               />
-              <div class="grid grid-cols-2 gap-6 768:gap-3">
+              <div
+                class="grid grid-cols-2 gap-6 mb-6 768:gap-6 768:grid-cols-1"
+              >
                 <UiHInput
                   placeholder="Ваш E-mail"
-                  class="mb-6"
                   v-model="contactForm.email"
                   :error="v$1.email.$error"
                   :errorText="errorText"
@@ -121,13 +137,12 @@ async function sendContactData() {
                   :error="v$1.phone.$error"
                   :errorText="errorText"
                   placeholder="Мобильный телефон"
-                  class="mb-6"
-                  dataMaska="+(996) ### ######"
+                  dataMaska="+996 ### ######"
                 />
               </div>
               <UiHTextarea
-                v-model="contactForm.comment"
-                :error="v$1.comment.$error"
+                v-model="contactForm.message"
+                :error="v$1.message.$error"
                 :errorText="errorText"
                 placeholder="Ваше сообщение"
                 class="mb-6"
@@ -145,6 +160,8 @@ async function sendContactData() {
       </div>
     </div>
   </div>
+
+  <NotificationModal v-if="settingsStore.notificationModal" />
 </template>
 
 <style lang="scss">
