@@ -87,4 +87,12 @@ onMounted(() => {});
   </header>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+</style>

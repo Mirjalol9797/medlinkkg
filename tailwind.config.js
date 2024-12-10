@@ -18,6 +18,7 @@ export default {
       768: { max: "768px" },
       960: { max: "960px" },
       1024: { max: "1024px" },
+      1400: { max: "1400px" },
     },
   },
   plugins: [],

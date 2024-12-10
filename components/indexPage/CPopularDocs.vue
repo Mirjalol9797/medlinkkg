@@ -163,10 +163,10 @@
           </SwiperSlide>
         </Swiper>
         <div
-          class="swiper-button-prev swiper-button-prev-docs !left-[-55px] bg-white rounded-full"
+          class="swiper-button-prev swiper-button-prev-docs !left-[-55px] bg-white rounded-full 1400:!left-[-18px] 768:!hidden"
         ></div>
         <div
-          class="swiper-button-next swiper-button-next-docs !right-[-55px] bg-white rounded-full"
+          class="swiper-button-next swiper-button-next-docs !right-[-55px] bg-white rounded-full 1400:!right-[-18px] 768:!hidden"
         ></div>
       </div>
     </div>
