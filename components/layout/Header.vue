@@ -25,7 +25,7 @@ onMounted(() => {});
 </script>
 
 <template>
-  <header class="header py-4 border-b border-[#f7f7f7] header-mobile">
+  <header class="header py-4 border-b border-[#f7f7f7] header-mobile 640:py-3">
     <div class="site-container flex-center-between">
       <div class="header-burger hidden 1024:block w-6" @click="showHeaderMenu">
         <img src="@/public/icons/mainPage/burger-menu.svg" alt="burger-menu" />

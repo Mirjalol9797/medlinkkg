@@ -17,7 +17,7 @@ function openChooseYourCity(e) {
         class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-2 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div class="services__text">
-          <div class="font-medium text-lg 640:text-base">Врачи</div>
+          <div class="font-medium text-lg 768:text-base">Врачи</div>
           <div>Мы поможем вам найти врачей</div>
         </div>
         <div class="w-[100px]">
@@ -28,7 +28,7 @@ function openChooseYourCity(e) {
         class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div class="services__text">
-          <div class="font-medium text-lg 640:text-base">Диагностика</div>
+          <div class="font-medium text-lg 768:text-base">Диагностика</div>
           <div>МРТ, МСКТ, УЗИ, ЭХОКГ, Рентген</div>
         </div>
         <img
@@ -41,7 +41,7 @@ function openChooseYourCity(e) {
         class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div class="services__text">
-          <div class="font-medium text-lg 640:text-base">Анализы</div>
+          <div class="font-medium text-lg 768:text-base">Анализы</div>
           <div>Общеклиническиеи прочие анализы</div>
         </div>
         <img
@@ -54,7 +54,7 @@ function openChooseYourCity(e) {
         class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div class="services__text">
-          <div class="font-medium text-lg 640:text-base">Болезни</div>
+          <div class="font-medium text-lg 768:text-base">Болезни</div>
           <div>
             Рассказываем о болезнях,их симптомах, методах лечения и
             потенциальных рисках
@@ -68,7 +68,7 @@ function openChooseYourCity(e) {
         class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div class="services__text">
-          <div class="font-medium text-lg 640:text-base">Клиники</div>
+          <div class="font-medium text-lg 768:text-base">Клиники</div>
           <div>
             Подберем клиники, готовые предложить условия, которые подходят
             именно вам
@@ -85,7 +85,7 @@ function openChooseYourCity(e) {
         class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div class="services__text">
-          <div class="font-medium text-lg 640:text-base">Услуги</div>
+          <div class="font-medium text-lg 768:text-base">Услуги</div>
           <div>
             Медицинские услугии <br />
             и не только
@@ -101,7 +101,7 @@ function openChooseYourCity(e) {
         class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div class="services__text">
-          <div class="font-medium text-lg 640:text-base">Лекарства</div>
+          <div class="font-medium text-lg 768:text-base">Лекарства</div>
           <div>
             Препараты <br />
             и не только
@@ -117,7 +117,7 @@ function openChooseYourCity(e) {
         class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div class="services__text">
-          <div class="font-medium text-lg 640:text-base">Симптомы</div>
+          <div class="font-medium text-lg 768:text-base">Симптомы</div>
           <div>
             Рассказываем о симптомах, проявлениях и возможных последствиях
           </div>

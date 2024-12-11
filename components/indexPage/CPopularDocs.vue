@@ -1,9 +1,22 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
+const windowWidth = ref(null);
+
+onMounted(() => {
+  const updateWidth = () => (windowWidth.value = window.innerWidth);
+  updateWidth(); // Устанавливаем начальное значение
+  window.addEventListener("resize", updateWidth);
+  onBeforeUnmount(() => window.removeEventListener("resize", updateWidth));
+});
+</script>
 <template>
   <div class="bg-[#f3f3f3] py-10">
     <div class="site-container">
       <h2 class="main-page-title">Популярные специальности врачей</h2>
-      <div class="site-slider relative">
+
+      <!-- for desktop -->
+      <div class="site-slider relative" v-if="windowWidth > 768">
         <Swiper
           :modules="[SwiperAutoplay, SwiperNavigation]"
           :slides-per-view="6"
@@ -169,6 +182,122 @@
           class="swiper-button-next swiper-button-next-docs !right-[-55px] bg-white rounded-full 1400:!right-[-18px] 768:!hidden"
         ></div>
       </div>
+
+      <!-- for mobile -->
+      <template v-else>
+        <div class="grid grid-cols-2 gap-6 mb-6">
+          <nuxt-link :to="localePath(`/`)" class="relative">
+            <div class="h-[240px] 480:h-[180px]">
+              <img
+                src="@/public/icons/mainPage/popularDocs/terapevt.jpg"
+                alt="terapevt"
+                title="terapevt"
+                class="w-full h-full object-cover rounded-lg"
+                loading="lazy"
+                format="webp"
+              />
+            </div>
+            <div
+              class="font-medium absolute rounded-b-lg bg-[#6486fa] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+            >
+              Терапевт
+            </div>
+          </nuxt-link>
+          <nuxt-link :to="localePath(`/`)" class="relative">
+            <div class="h-[240px] 480:h-[180px]">
+              <img
+                src="@/public/icons/mainPage/popularDocs/kardiolog.jpg"
+                alt="kardiolog"
+                title="kardiolog"
+                class="w-full h-full object-cover rounded-lg"
+                loading="lazy"
+                format="webp"
+              />
+            </div>
+            <div
+              class="font-medium absolute rounded-b-lg bg-[#ff597f] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+            >
+              Кардиолог
+            </div>
+          </nuxt-link>
+          <nuxt-link :to="localePath(`/`)" class="relative">
+            <div class="h-[240px] 480:h-[180px]">
+              <img
+                src="@/public/icons/mainPage/popularDocs/pediatr.jpg"
+                alt="pediatr"
+                title="pediatr"
+                class="w-full h-full object-cover rounded-lg"
+                loading="lazy"
+                format="webp"
+              />
+            </div>
+            <div
+              class="font-medium absolute rounded-b-lg bg-[#4c6ddf] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+            >
+              Педиатр
+            </div>
+          </nuxt-link>
+          <nuxt-link :to="localePath(`/`)" class="relative">
+            <div class="h-[240px] 480:h-[180px]">
+              <img
+                src="@/public/icons/mainPage/popularDocs/lor.jpg"
+                alt="lor"
+                title="lor"
+                class="w-full h-full object-cover rounded-lg"
+                loading="lazy"
+                format="webp"
+              />
+            </div>
+            <div
+              class="font-medium absolute rounded-b-lg bg-[#ec8d4e] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+            >
+              ЛОР
+            </div>
+          </nuxt-link>
+          <nuxt-link :to="localePath(`/`)" class="relative">
+            <div class="h-[240px] 480:h-[180px]">
+              <img
+                src="@/public/icons/mainPage/popularDocs/nevrolog.jpg"
+                alt="nevrolog"
+                title="nevrolog"
+                class="w-full h-full object-cover rounded-lg"
+                loading="lazy"
+                format="webp"
+              />
+            </div>
+            <div
+              class="font-medium absolute rounded-b-lg bg-[#fb6285] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+            >
+              Невролог
+            </div>
+          </nuxt-link>
+          <nuxt-link :to="localePath(`/`)" class="relative">
+            <div class="h-[240px] 480:h-[180px]">
+              <img
+                src="@/public/icons/mainPage/popularDocs/okulist.jpg"
+                alt="okulist"
+                title="okulist"
+                class="w-full h-full object-cover rounded-lg"
+                loading="lazy"
+                format="webp"
+              />
+            </div>
+            <div
+              class="font-medium absolute rounded-b-lg bg-[#6e8efb] z-10 bottom-0 w-full text-center text-white py-2 text-base"
+            >
+              Офтальмолог
+            </div>
+          </nuxt-link>
+        </div>
+        <div class="flex-center-cbetween">
+          <nuxt-link
+            to="/"
+            class="inline-block bg-[#f39] px-6 py-3 rounded-md text-white text-sm font-semibold text-center"
+          >
+            Посмотреть все
+          </nuxt-link>
+        </div>
+      </template>
     </div>
   </div>
 </template>

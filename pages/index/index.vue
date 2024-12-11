@@ -45,9 +45,9 @@ function openChooseYourCity() {
     <CServices @openChooseYourCity="openChooseYourCity" />
   </div>
 
-  <!-- <CPopularDocs />
+  <CPopularDocs />
 
-  <CClinicSpecialties :clinicSpecialties="dataClinicSpecialties?.data" />
+  <!-- <CClinicSpecialties :clinicSpecialties="dataClinicSpecialties?.data" />
 
   <CPopularClinic @openChooseYourCity="openChooseYourCity" />
 

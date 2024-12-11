@@ -186,4 +186,15 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .footer {
+    &-wrap {
+      margin: 0 0px 50px;
+    }
+    &-nav {
+      padding: 0;
+    }
+  }
+}
 </style>
