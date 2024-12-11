@@ -3,7 +3,9 @@
 <template>
   <footer class="bg-[#f3f3f3] py-10 footer">
     <div class="site-container">
-      <div class="flex justify-between footer-wrap">
+      <div
+        class="flex justify-between footer-wrap 1024:grid 1024:grid-cols-2 1024:gap-6 640:!grid-cols-1"
+      >
         <ul class="footer-nav">
           <li class="footer-nav__item">
             <nuxt-link to="/" class="footer-nav__link border-b border-black"
@@ -140,7 +142,7 @@
           </li>
         </ul>
       </div>
-      <div class="flex-center gap-4">
+      <div class="flex-center gap-4 640:flex-col 640:!items-start">
         <div class="min-w-14">
           <img
             src="@/public/icons/mainPage/footer_18.png"
