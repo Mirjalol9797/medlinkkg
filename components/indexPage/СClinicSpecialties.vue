@@ -30,7 +30,7 @@ const groupedData = computed(() => {
     <div class="site-container">
       <h2 class="main-page-title">Специальности клиник</h2>
 
-      <div class="clinic-specialties">
+      <div class="clinic-specialties 640:mb-6">
         <ul
           :data-first-letter="letter"
           class="clinic-specialties__wrap"
@@ -54,6 +54,14 @@ const groupedData = computed(() => {
             </nuxt-link>
           </li>
         </ul>
+      </div>
+      <div class="hidden 640:flex 640:justify-center">
+        <nuxt-link
+          to="/"
+          class="inline-block bg-[#f39] px-6 py-3 rounded-md text-white text-sm font-semibold text-center"
+        >
+          Посмотреть все
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -94,6 +102,14 @@ const groupedData = computed(() => {
   }
   &__count {
     color: #828ea5;
+  }
+}
+
+@media (max-width: 640px) {
+  .clinic-specialties {
+    column-gap: 40px;
+    height: 260px;
+    overflow: hidden;
   }
 }
 </style>

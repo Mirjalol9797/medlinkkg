@@ -47,9 +47,9 @@ function openChooseYourCity() {
 
   <CPopularDocs />
 
-  <!-- <CClinicSpecialties :clinicSpecialties="dataClinicSpecialties?.data" />
+  <CClinicSpecialties :clinicSpecialties="dataClinicSpecialties?.data" />
 
-  <CPopularClinic @openChooseYourCity="openChooseYourCity" />
+  <!-- <CPopularClinic @openChooseYourCity="openChooseYourCity" />
 
   <CDoctorsSpecialties :doctorsSpecialties="dataDoctorsSpecialties?.data" />
 
