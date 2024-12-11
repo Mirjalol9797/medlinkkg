@@ -6,18 +6,18 @@ function openChooseYourCity(e) {
 }
 </script>
 <template>
-  <div class="mb-14">
+  <div class="mb-14 main-page-services">
     <h1 class="main-page-title">
       Забота о вашем здоровье - ищите <br />
       клинику, врача, лекарства в
       <span @click="openChooseYourCity">Бишкеке</span>
     </h1>
-    <div class="grid grid-cols-6 gap-4">
+    <div class="services">
       <div
-        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-2 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-2 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
-        <div>
-          <div class="font-medium text-lg">Врачи</div>
+        <div class="services__text">
+          <div class="font-medium text-lg 640:text-base">Врачи</div>
           <div>Мы поможем вам найти врачей</div>
         </div>
         <div class="w-[100px]">
@@ -25,10 +25,12 @@ function openChooseYourCity(e) {
         </div>
       </div>
       <div
-        class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
-        <div class="font-medium text-lg">Диагностика</div>
-        <div>МРТ, МСКТ, УЗИ, ЭХОКГ, Рентген</div>
+        <div class="services__text">
+          <div class="font-medium text-lg 640:text-base">Диагностика</div>
+          <div>МРТ, МСКТ, УЗИ, ЭХОКГ, Рентген</div>
+        </div>
         <img
           src="@/public/icons/mainPage/services/diag.png"
           alt="diag"
@@ -36,10 +38,12 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
-        <div class="font-medium text-lg">Анализы</div>
-        <div>Общеклиническиеи прочие анализы</div>
+        <div class="services__text">
+          <div class="font-medium text-lg 640:text-base">Анализы</div>
+          <div>Общеклиническиеи прочие анализы</div>
+        </div>
         <img
           src="@/public/icons/mainPage/services/analiz.png"
           alt="diag"
@@ -47,10 +51,10 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
-        <div>
-          <div class="font-medium text-lg">Болезни</div>
+        <div class="services__text">
+          <div class="font-medium text-lg 640:text-base">Болезни</div>
           <div>
             Рассказываем о болезнях,их симптомах, методах лечения и
             потенциальных рисках
@@ -61,10 +65,10 @@ function openChooseYourCity(e) {
         </div>
       </div>
       <div
-        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
-        <div>
-          <div class="font-medium text-lg">Клиники</div>
+        <div class="services__text">
+          <div class="font-medium text-lg 640:text-base">Клиники</div>
           <div>
             Подберем клиники, готовые предложить условия, которые подходят
             именно вам
@@ -78,12 +82,14 @@ function openChooseYourCity(e) {
         </div>
       </div>
       <div
-        class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
-        <div class="font-medium text-lg">Услуги</div>
-        <div>
-          Медицинские услугии <br />
-          и не только
+        <div class="services__text">
+          <div class="font-medium text-lg 640:text-base">Услуги</div>
+          <div>
+            Медицинские услугии <br />
+            и не только
+          </div>
         </div>
         <img
           src="@/public/icons/mainPage/services/usligi.png"
@@ -92,12 +98,14 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
-        <div class="font-medium text-lg">Лекарства</div>
-        <div>
-          Препараты <br />
-          и не только
+        <div class="services__text">
+          <div class="font-medium text-lg 640:text-base">Лекарства</div>
+          <div>
+            Препараты <br />
+            и не только
+          </div>
         </div>
         <img
           src="@/public/icons/mainPage/services/drug.png"
@@ -106,10 +114,10 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
-        <div>
-          <div class="font-medium text-lg">Симптомы</div>
+        <div class="services__text">
+          <div class="font-medium text-lg 640:text-base">Симптомы</div>
           <div>
             Рассказываем о симптомах, проявлениях и возможных последствиях
           </div>
@@ -124,4 +132,49 @@ function openChooseYourCity(e) {
     </div>
   </div>
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.main-page-services {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        img {
+          position: relative;
+          top: 0;
+        }
+      }
+    }
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+
+      &__item {
+        grid-column: 1;
+        padding: 8px;
+        position: relative;
+        img {
+          position: absolute;
+          top: 50%;
+          right: 8px;
+          width: 50px;
+          transform: translateY(-50%);
+        }
+      }
+
+      &__text {
+        max-width: 85%;
+      }
+    }
+  }
+}
+</style>

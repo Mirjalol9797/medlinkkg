@@ -151,7 +151,7 @@
           />
         </div>
         <div class="text-[#999] font-medium">
-          <div class="text-lg mb-1">
+          <div class="text-lg mb-1 640:text-base">
             © Medlink.kg - Все клиники и медицинские центры Бишкека
           </div>
           <div>

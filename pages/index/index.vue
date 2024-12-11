@@ -40,12 +40,12 @@ function openChooseYourCity() {
 </script>
 
 <template>
-  <!-- <div class="site-container">
+  <div class="site-container">
     <CSearchHeader />
     <CServices @openChooseYourCity="openChooseYourCity" />
   </div>
 
-  <CPopularDocs />
+  <!-- <CPopularDocs />
 
   <CClinicSpecialties :clinicSpecialties="dataClinicSpecialties?.data" />
 

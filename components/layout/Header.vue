@@ -40,6 +40,9 @@ onMounted(() => {});
         >
           <img src="@/public/icons/mainPage/close.svg" alt="" />
         </button>
+        <nuxt-link to="/" class="hidden w-[120px] 1024:inline-block">
+          <img src="/site-logo.png" alt="logo" title="logo" />
+        </nuxt-link>
         <li>
           <nuxt-link
             to="/"
@@ -143,7 +146,7 @@ onMounted(() => {});
         height: 100%;
         inset: 0;
         z-index: 100;
-        padding: 10px 20px;
+        padding: 20px 20px;
 
         li {
           padding: 8px 0;
