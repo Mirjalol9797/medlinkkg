@@ -40,7 +40,7 @@ function openChooseYourCity() {
 </script>
 
 <template>
-  <div class="site-container">
+  <!-- <div class="site-container">
     <CSearchHeader />
     <CServices @openChooseYourCity="openChooseYourCity" />
   </div>
@@ -57,7 +57,7 @@ function openChooseYourCity() {
 
   <CReviews />
 
-  <MChooseYourCity v-if="settingsStore.mChooseYourCity" />
+  <MChooseYourCity v-if="settingsStore.mChooseYourCity" /> -->
 
   <!-- seo -->
   <SeoSettings />

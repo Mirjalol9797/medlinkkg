@@ -17,7 +17,7 @@ function openChooseYourCity(e) {
         class="col-span-2 bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-2 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
       >
         <div>
-          <div class="font-medium text-lg">Врач</div>
+          <div class="font-medium text-lg">Врачи</div>
           <div>Мы поможем вам найти врачей</div>
         </div>
         <div class="w-[100px]">
