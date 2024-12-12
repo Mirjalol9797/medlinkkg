@@ -30,7 +30,7 @@ const groupedData = computed(() => {
     <div class="site-container">
       <h2 class="main-page-title">Специальности клиник</h2>
 
-      <div class="clinic-specialties 640:mb-6">
+      <div class="clinic-specialties">
         <ul
           :data-first-letter="letter"
           class="clinic-specialties__wrap"
@@ -55,7 +55,7 @@ const groupedData = computed(() => {
           </li>
         </ul>
       </div>
-      <div class="hidden 640:flex 640:justify-center">
+      <div class="hidden 640:flex 640:justify-center 640:mt-6">
         <nuxt-link
           to="/"
           class="inline-block bg-[#f39] px-6 py-3 rounded-md text-white text-sm font-semibold text-center"
