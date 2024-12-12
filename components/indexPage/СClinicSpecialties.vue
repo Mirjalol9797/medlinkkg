@@ -44,7 +44,7 @@ const groupedData = computed(() => {
           >
             <nuxt-link
               to="/"
-              title="Абдоминальный хирург"
+              :title="item.name_ru"
               class="clinic-specialties__link"
             >
               <span class="pr-2"> {{ item.name_ru }}</span>
