@@ -1,16 +1,17 @@
 <script setup>
 import { onMounted } from "vue";
-const getClinicSpecialtiesApi = useClinicSpecialties();
+const getDoctorsSpecialtiesApi = useDoctorsSpecialties();
 
 // fetch api
-const { data: dataClinicSpecialties } = useAsyncData("ClinicSpecialties", () =>
-  getClinicSpecialtiesApi.getClinicSpecialties()
+const { data: dataDoctorsSpecialties } = useAsyncData(
+  "DoctorsSpecialties",
+  () => getDoctorsSpecialtiesApi.getDoctorsSpecialties()
 );
 
 // Функция для группировки данных
 const groupedData = computed(() => {
   // Сортируем массив по алфавиту
-  const sortedData = dataClinicSpecialties.value?.data.sort((a, b) =>
+  const sortedData = dataDoctorsSpecialties.value?.data.sort((a, b) =>
     a.name_ru.localeCompare(b.name_ru, "ru")
   );
 
@@ -27,18 +28,16 @@ const groupedData = computed(() => {
 
 // AdFox initialization
 onMounted(() => {
-  console.log(dataClinicSpecialties);
-
   if (window?.yaContextCb) {
     window.yaContextCb.push(() => {
       Ya.adfoxCode.create({
         ownerId: 11643569,
-        containerId: "adfox_173377051027593363",
+        containerId: "adfox_173377077916223363",
         params: {
           pp: "h",
           ps: "imcq",
           p2: "p",
-          pk: "clinics",
+          pk: "doctors",
         },
       });
     });
@@ -51,7 +50,7 @@ onMounted(() => {
           pp: "fisz",
           ps: "imcq",
           p2: "p",
-          pk: "clinics mobile",
+          pk: "doctors mobile",
         },
       });
     });
@@ -76,10 +75,10 @@ onMounted(() => {
           alt="arrow"
           class="w-4"
         />
-        <span>Клиники</span>
+        <span>Врачи</span>
       </div>
 
-      <h1 class="h1-title">Медицинские центры и клиники в Бишкеке</h1>
+      <h1 class="h1-title">Каталог врачей Бишкека</h1>
 
       <div class="flex gap-6">
         <div class="list-container">
@@ -101,7 +100,7 @@ onMounted(() => {
               >
                 <span class="pr-2"> {{ item.name_ru }}</span>
                 <span class="list-container__count">{{
-                  item.clinic_count
+                  item.doctor_count
                 }}</span>
               </nuxt-link>
             </li>
@@ -111,7 +110,7 @@ onMounted(() => {
         <div
           class="min-w-[300px] max-w-[300px] h-[500px] border border-[#000] 1024:hidden"
         >
-          <div id="adfox_173377051027593363"></div>
+          <div id="adfox_173377077916223363"></div>
         </div>
       </div>
     </div>

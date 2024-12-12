@@ -44,10 +44,14 @@
             <nuxt-link to="/" class="footer-nav__link">Карта сайта</nuxt-link>
           </li>
           <li class="footer-nav__item">
-            <nuxt-link to="/" class="footer-nav__link">Врачи</nuxt-link>
+            <nuxt-link :to="localePath(`/doctors`)" class="footer-nav__link"
+              >Врачи</nuxt-link
+            >
           </li>
           <li class="footer-nav__item">
-            <nuxt-link to="/" class="footer-nav__link">Клиники</nuxt-link>
+            <nuxt-link :to="localePath(`/clinics`)" class="footer-nav__link"
+              >Клиники</nuxt-link
+            >
           </li>
           <li class="footer-nav__item">
             <nuxt-link to="/" class="footer-nav__link">Услуги</nuxt-link>

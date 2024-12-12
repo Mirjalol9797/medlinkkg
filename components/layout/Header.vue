@@ -45,7 +45,7 @@ onMounted(() => {});
         </nuxt-link>
         <li>
           <nuxt-link
-            to="/"
+            :to="localePath(`/doctors`)"
             class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
           >
             Врачи
