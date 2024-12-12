@@ -2,18 +2,13 @@
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
 const emit = defineEmits(["openChooseYourCity"]);
-const windowWidth = ref(null);
+const { windowWidth, setupListeners } = useWindowWidth();
+
+setupListeners();
 
 function openChooseYourCity(e) {
   emit("openChooseYourCity", e);
 }
-
-onMounted(() => {
-  const updateWidth = () => (windowWidth.value = window.innerWidth);
-  updateWidth(); // Устанавливаем начальное значение
-  window.addEventListener("resize", updateWidth);
-  onBeforeUnmount(() => window.removeEventListener("resize", updateWidth));
-});
 </script>
 
 <template>
@@ -135,10 +130,10 @@ onMounted(() => {
           </SwiperSlide>
         </Swiper>
         <div
-          class="swiper-button-prev swiper-button-prev-clinic !left-[-55px] bg-white rounded-full"
+          class="swiper-button-prev swiper-button-prev-clinic !left-[-55px] bg-white rounded-full 1400:!left-[-18px] 768:!hidden"
         ></div>
         <div
-          class="swiper-button-next swiper-button-next-clinic !right-[-55px] bg-white rounded-full"
+          class="swiper-button-next swiper-button-next-clinic !right-[-55px] bg-white rounded-full 1400:!right-[-18px] 768:!hidden"
         ></div>
       </div>
 

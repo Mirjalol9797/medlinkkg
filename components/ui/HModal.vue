@@ -14,7 +14,7 @@ function closeModal(e) {
 
 <template>
   <div
-    class="fixed inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] z-10 768:bg-white 768:items-start"
+    class="fixed inset-0 flex items-center justify-center bg-[rgba(0,0,0,0.5)] z-20 768:bg-white 768:items-start"
   >
     <div
       :class="classModal"

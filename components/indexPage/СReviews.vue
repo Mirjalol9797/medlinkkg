@@ -3,26 +3,30 @@
 <template>
   <div class="py-10">
     <div class="site-container">
-      <h2 class="main-page-title">Отзывы</h2>
+      <h2 class="main-page-title 768:!mb-5">Отзывы</h2>
       <div class="site-slider relative slider-reviews">
         <Swiper
           :modules="[SwiperAutoplay, SwiperNavigation]"
           :slides-per-view="4"
           :spaceBetween="16"
-          :loop="false"
+          :loop="true"
           :navigation="{
             nextEl: '.swiper-button-next-preview',
             prevEl: '.swiper-button-prev-preview',
           }"
+          :autoplay="{
+            delay: 4000, // Задержка в миллисекундах
+            disableOnInteraction: false, // Продолжать автопрокрутку после взаимодействия
+          }"
           :breakpoints="{
-            360: {
-              slidesPerView: 2,
+            320: {
+              slidesPerView: 1,
             },
             640: {
-              slidesPerView: 3,
+              slidesPerView: 2,
             },
             960: {
-              slidesPerView: 4,
+              slidesPerView: 3,
             },
             1200: {
               slidesPerView: 4,
@@ -64,10 +68,10 @@
           </SwiperSlide>
         </Swiper>
         <div
-          class="swiper-button-prev swiper-button-prev-preview !left-[-55px] bg-white rounded-full"
+          class="swiper-button-prev swiper-button-prev-preview !left-[-55px] bg-white rounded-full 1400:!left-[-18px] 768:!hidden"
         ></div>
         <div
-          class="swiper-button-next swiper-button-next-preview !right-[-55px] bg-white rounded-full"
+          class="swiper-button-next swiper-button-next-preview !right-[-55px] bg-white rounded-full 1400:!right-[-18px] 768:!hidden"
         ></div>
       </div>
     </div>

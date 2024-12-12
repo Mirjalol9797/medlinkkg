@@ -95,3 +95,33 @@ export function formatPhoneNumber(phoneNumber) {
     "+($1) $2 $3 $4 $5"
   );
 }
+
+/**
+ * Логика для управления шириной окна.
+ * @returns {Object} - Reactive `windowWidth` и метод для установки обработчика события.
+ */
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
+export function useWindowWidth() {
+  const windowWidth = ref(null);
+
+  const updateWidth = () => {
+    windowWidth.value = window.innerWidth;
+  };
+
+  const setupListeners = () => {
+    onMounted(() => {
+      updateWidth();
+      window.addEventListener("resize", updateWidth);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener("resize", updateWidth);
+    });
+  };
+
+  return {
+    windowWidth,
+    setupListeners,
+  };
+}

@@ -1,14 +1,9 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
-const windowWidth = ref(null);
+const { windowWidth, setupListeners } = useWindowWidth();
 
-onMounted(() => {
-  const updateWidth = () => (windowWidth.value = window.innerWidth);
-  updateWidth(); // Устанавливаем начальное значение
-  window.addEventListener("resize", updateWidth);
-  onBeforeUnmount(() => window.removeEventListener("resize", updateWidth));
-});
+setupListeners();
 </script>
 <template>
   <div class="bg-[#f3f3f3] py-10">
@@ -185,7 +180,7 @@ onMounted(() => {
 
       <!-- for mobile -->
       <template v-else>
-        <div class="grid grid-cols-2 gap-6 mb-6">
+        <div class="grid grid-cols-2 gap-6 mb-6 480:gap-3">
           <nuxt-link :to="localePath(`/`)" class="relative">
             <div class="h-[240px] 480:h-[180px]">
               <img

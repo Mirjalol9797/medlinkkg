@@ -53,11 +53,11 @@ function openChooseYourCity() {
 
   <CDoctorsSpecialties :doctorsSpecialties="dataDoctorsSpecialties?.data" />
 
-  <!-- <CDiagnostics @openChooseYourCity="openChooseYourCity" />
+  <CDiagnostics @openChooseYourCity="openChooseYourCity" />
 
   <CReviews />
 
-  <MChooseYourCity v-if="settingsStore.mChooseYourCity" /> -->
+  <MChooseYourCity v-if="settingsStore.mChooseYourCity" />
 
   <!-- seo -->
   <SeoSettings />
