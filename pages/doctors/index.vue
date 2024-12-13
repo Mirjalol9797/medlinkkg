@@ -28,33 +28,33 @@ const groupedData = computed(() => {
 
 // AdFox initialization
 onMounted(() => {
-  const containerId = "adfox_173377077916223363";
-  console.log("containerId", containerId);
-
-  // Проверяем, что контейнер существует
-  if (!document.getElementById(containerId)) {
-    console.error(`Container with ID '${containerId}' not found.`);
-    return;
-  }
-
-  // Добавляем код в контекст AdFox
-  window.yaContextCb = window.yaContextCb || [];
-  window.yaContextCb.push(() => {
-    if (window.Ya?.adfoxCode?.create) {
-      window.Ya.adfoxCode.create({
+  if (window?.yaContextCb) {
+    window.yaContextCb.push(() => {
+      Ya.adfoxCode.create({
         ownerId: 11643569,
-        containerId: containerId,
+        containerId: "adfox_173377077916223363",
         params: {
-          pp: "fisz",
+          pp: "h",
           ps: "imcq",
           p2: "p",
-          pk: "clinics mobile",
+          pk: "doctors",
         },
       });
-    } else {
-      console.error("Adfox library is not loaded.");
-    }
-  });
+    });
+
+    // window.yaContextCb.push(() => {
+    //   Ya.adfoxCode.create({
+    //     ownerId: 11643569,
+    //     containerId: "adfox_173402927413563363",
+    //     params: {
+    //       pp: "fisz",
+    //       ps: "imcq",
+    //       p2: "p",
+    //       pk: "doctors mobile",
+    //     },
+    //   });
+    // });
+  }
 });
 </script>
 
@@ -119,7 +119,6 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .list-container {
-  grid-column-gap: 40px;
   column-gap: 40px;
   column-width: 160px;
 
@@ -153,6 +152,14 @@ onMounted(() => {
   }
   &__count {
     color: #828ea5;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-container {
+    &__wrap {
+      display: block;
+    }
   }
 }
 </style>
