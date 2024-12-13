@@ -28,44 +28,44 @@ const groupedData = computed(() => {
 
 // AdFox initialization
 onMounted(() => {
-  if (window?.yaContextCb) {
-    window.yaContextCb.push(() => {
-      Ya.adfoxCode.create({
-        ownerId: 11643569,
-        containerId: "adfox_173377077916223363",
-        params: {
-          pp: "h",
-          ps: "imcq",
-          p2: "p",
-          pk: "doctors",
-        },
-      });
-    });
+  const containerId = "adfox_173377077916223363";
+  console.log("containerId", containerId);
 
-    window.yaContextCb.push(() => {
-      Ya.adfoxCode.create({
+  // Проверяем, что контейнер существует
+  if (!document.getElementById(containerId)) {
+    console.error(`Container with ID '${containerId}' not found.`);
+    return;
+  }
+
+  // Добавляем код в контекст AdFox
+  window.yaContextCb = window.yaContextCb || [];
+  window.yaContextCb.push(() => {
+    if (window.Ya?.adfoxCode?.create) {
+      window.Ya.adfoxCode.create({
         ownerId: 11643569,
-        containerId: "adfox_173402927413563363",
+        containerId: containerId,
         params: {
           pp: "fisz",
           ps: "imcq",
           p2: "p",
-          pk: "doctors mobile",
+          pk: "clinics mobile",
         },
       });
-    });
-  }
+    } else {
+      console.error("Adfox library is not loaded.");
+    }
+  });
 });
 </script>
 
 <template>
   <div class="clinics-page py-14">
     <div class="site-container">
-      <div
+      <!-- <div
         class="w-full h-[300px] hidden mb-10 border border-[#000] 1024:block"
       >
         <div id="adfox_173402927413563363"></div>
-      </div>
+      </div> -->
       <div class="flex gap-2 mb-6 font-semibold 480:text-xs 480:mb-4">
         <nuxt-link to="/" class="font-medium text-[#3f78c6]" title="Medlink.kg">
           Medlink.kg
@@ -81,7 +81,7 @@ onMounted(() => {
       <h1 class="h1-title">Каталог врачей Бишкека</h1>
 
       <div class="flex gap-6">
-        <div class="list-container">
+        <div class="list-container w-full">
           <ul
             :data-first-letter="letter"
             class="list-container__wrap"
@@ -119,6 +119,7 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .list-container {
+  grid-column-gap: 40px;
   column-gap: 40px;
   column-width: 160px;
 
@@ -127,7 +128,6 @@ onMounted(() => {
     margin-bottom: 55px;
     padding: 40px 0 0;
     position: relative;
-    display: inline-block;
 
     &:before {
       font-size: 18px;
@@ -153,14 +153,6 @@ onMounted(() => {
   }
   &__count {
     color: #828ea5;
-  }
-}
-
-@media (max-width: 480px) {
-  .list-container {
-    &__wrap {
-      display: block;
-    }
   }
 }
 </style>

@@ -52,7 +52,6 @@ if (process.client) {
   //////////////////////////////////////////////////////////////////////////////////////////////////
 
   window.yaContextCb = window.yaContextCb || [];
-  console.log(window.yaContextCb);
 
   // Подключение скрипта Yandex Ads
   script.src = "https://yandex.ru/ads/system/context.js";
