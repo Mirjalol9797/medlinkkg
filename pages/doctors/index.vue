@@ -32,12 +32,12 @@ onMounted(() => {
     window.yaContextCb.push(() => {
       Ya.adfoxCode.create({
         ownerId: 11643569,
-        containerId: "adfox_173377077916223363",
+        containerId: "adfox_173407466896563363",
         params: {
-          pp: "h",
-          ps: "imcq",
+          p1: "dfcfr",
           p2: "p",
-          pk: "doctors",
+          pfc: "hcbey",
+          pfb: "bdscbv",
         },
       });
     });
@@ -110,7 +110,7 @@ onMounted(() => {
         <div
           class="min-w-[300px] max-w-[300px] h-[500px] border border-[#000] 1024:hidden"
         >
-          <div id="adfox_173377077916223363"></div>
+          <div id="adfox_173407466896563363"></div>
         </div>
       </div>
     </div>
