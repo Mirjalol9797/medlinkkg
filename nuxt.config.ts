@@ -46,7 +46,6 @@ export default defineNuxtConfig({
         // яндекс рекламан начало
         {
           children: "window.yaContextCb = window.yaContextCb || [];",
-          type: "text/javascript",
         },
         {
           src: "https://yandex.ru/ads/system/context.js",
