@@ -13,8 +13,9 @@ function openChooseYourCity(e) {
       <span @click="openChooseYourCity">Бишкеке</span>
     </h1>
     <div class="services">
-      <div
-        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-2 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+      <nuxt-link
+        :to="localePath(`/doctors`)"
+        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-2 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533] 640:order-1"
       >
         <div class="services__text">
           <div class="font-medium text-lg 768:text-base">Врачи</div>
@@ -23,9 +24,9 @@ function openChooseYourCity(e) {
         <div class="w-[100px]">
           <img src="@/public/icons/mainPage/services/doc.png" alt="doc" />
         </div>
-      </div>
+      </nuxt-link>
       <div
-        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533] 640:order-3"
       >
         <div class="services__text">
           <div class="font-medium text-lg 768:text-base">Диагностика</div>
@@ -38,7 +39,7 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533] 640:order-4"
       >
         <div class="services__text">
           <div class="font-medium text-lg 768:text-base">Анализы</div>
@@ -51,7 +52,7 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533] 640:order-5"
       >
         <div class="services__text">
           <div class="font-medium text-lg 768:text-base">Болезни</div>
@@ -64,8 +65,9 @@ function openChooseYourCity(e) {
           <img src="@/public/icons/mainPage/services/illnes.png" alt="illnes" />
         </div>
       </div>
-      <div
-        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+      <nuxt-link
+        :to="localePath(`/clinics`)"
+        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533] 640:order-2"
       >
         <div class="services__text">
           <div class="font-medium text-lg 768:text-base">Клиники</div>
@@ -80,9 +82,9 @@ function openChooseYourCity(e) {
             alt="hospital"
           />
         </div>
-      </div>
+      </nuxt-link>
       <div
-        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533] 640:order-6"
       >
         <div class="services__text">
           <div class="font-medium text-lg 768:text-base">Услуги</div>
@@ -98,7 +100,7 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="services__item bg-[#f3f3f3] rounded-lg py-2 px-2 relative hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533] 640:order-7"
       >
         <div class="services__text">
           <div class="font-medium text-lg 768:text-base">Лекарства</div>
@@ -114,7 +116,7 @@ function openChooseYourCity(e) {
         />
       </div>
       <div
-        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533]"
+        class="col-span-2 services__item bg-[#f3f3f3] rounded-lg py-2 px-4 pr-2 flex justify-between gap-4 hover:shadow-[0_0_1px_0_#3d3f5566,0_2px_20px_0_#3d3f5533] 640:order-8"
       >
         <div class="services__text">
           <div class="font-medium text-lg 768:text-base">Симптомы</div>

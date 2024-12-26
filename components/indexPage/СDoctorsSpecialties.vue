@@ -56,7 +56,7 @@ const groupedData = computed(() => {
       </div>
       <div class="hidden 640:flex 640:justify-center 640:mt-6">
         <nuxt-link
-          to="/"
+          :to="localePath(`/doctors`)"
           class="inline-block bg-[#f39] px-6 py-3 rounded-md text-white text-sm font-semibold text-center"
         >
           Посмотреть все

@@ -57,7 +57,7 @@ const groupedData = computed(() => {
       </div>
       <div class="hidden 640:flex 640:justify-center 640:mt-6">
         <nuxt-link
-          to="/"
+          :to="localePath(`/clinics`)"
           class="inline-block bg-[#f39] px-6 py-3 rounded-md text-white text-sm font-semibold text-center"
         >
           Посмотреть все
@@ -110,6 +110,20 @@ const groupedData = computed(() => {
     column-gap: 40px;
     height: 260px;
     overflow: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  .clinic-specialties {
+    column-gap: 40px;
+    height: 260px;
+    overflow: hidden;
+
+    &__wrap {
+      display: block;
+      margin-bottom: 25px;
+      padding-top: 30px;
+    }
   }
 }
 </style>
