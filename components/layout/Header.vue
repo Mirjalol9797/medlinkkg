@@ -33,73 +33,78 @@ onMounted(() => {});
       <nuxt-link to="/" class="inline-block w-[120px]">
         <img src="/site-logo.png" alt="logo" title="logo" />
       </nuxt-link>
-      <ul class="flex-center gap-6 font-medium header-nav">
+      <div class="header-nav">
         <button
           class="header-close hidden 1024:block absolute top-4 right-4 w-4"
           @click="closeHeaderMenu"
         >
           <img src="@/public/icons/mainPage/close.svg" alt="" />
         </button>
-        <nuxt-link to="/" class="hidden w-[120px] 1024:inline-block">
+        <nuxt-link to="/" class="hidden w-[120px] 1024:inline-block mb-6">
           <img src="/site-logo.png" alt="logo" title="logo" />
         </nuxt-link>
-        <li>
-          <nuxt-link
-            :to="localePath(`/doctors`)"
-            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
-          >
-            Врачи
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            :to="localePath(`/clinics`)"
-            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
-          >
-            Клиники
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            to="/"
-            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
-          >
-            Диагностика
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            to="/"
-            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
-          >
-            Услуги
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            to="/"
-            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
-          >
-            Препараты
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link
-            to="/"
-            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
-          >
-            Болезни
-          </nuxt-link>
-        </li>
-        <li class="1024:hidden">
-          <nuxt-link
-            to="/"
-            class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
-          >
-            Еще
-          </nuxt-link>
-        </li>
-      </ul>
+        <ul
+          class="flex-center gap-6 font-medium 1024:flex-col 1024:!items-start 1024:gap-2"
+          @click="closeHeaderMenu"
+        >
+          <li>
+            <nuxt-link
+              :to="localePath(`/doctors`)"
+              class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            >
+              Врачи
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              :to="localePath(`/clinics`)"
+              class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            >
+              Клиники
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              to="/"
+              class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            >
+              Диагностика
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              to="/"
+              class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            >
+              Услуги
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              to="/"
+              class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            >
+              Препараты
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link
+              to="/"
+              class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            >
+              Болезни
+            </nuxt-link>
+          </li>
+          <li class="1024:hidden">
+            <nuxt-link
+              to="/"
+              class="font-semibold text-base hover:text-[#69f] hover:border-b hover:border-[#69f]"
+            >
+              Еще
+            </nuxt-link>
+          </li>
+        </ul>
+      </div>
       <div class="flex-center gap-2">
         <nuxt-link to="/" class="bg-[#f39] px-2 py-1.5 rounded-md text-white">
           <svg

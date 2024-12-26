@@ -27,31 +27,16 @@ const groupedData = computed(() => {
 
 // AdFox initialization
 onMounted(() => {
-  console.log(dataClinicSpecialties);
-
   if (window?.yaContextCb) {
     window.yaContextCb.push(() => {
       Ya.adfoxCode.create({
         ownerId: 11643569,
-        containerId: "adfox_173377051027593363",
+        containerId: "adfox_173519165622543363",
         params: {
           pp: "h",
           ps: "imcq",
           p2: "p",
-          pk: "clinics",
-        },
-      });
-    });
-
-    window.yaContextCb.push(() => {
-      Ya.adfoxCode.create({
-        ownerId: 11643569,
-        containerId: "adfox_173402927413563363",
-        params: {
-          pp: "fisz",
-          ps: "imcq",
-          p2: "p",
-          pk: "clinics mobile",
+          pk: "side banner medlink clinics",
         },
       });
     });
@@ -64,9 +49,7 @@ onMounted(() => {
     <div class="site-container">
       <div
         class="w-full h-[300px] hidden mb-10 border border-[#000] 1024:block"
-      >
-        <div id="adfox_173402927413563363"></div>
-      </div>
+      ></div>
       <div class="flex gap-2 mb-6 font-semibold 480:text-xs 480:mb-4">
         <nuxt-link to="/" class="font-medium text-[#3f78c6]" title="Medlink.kg">
           Medlink.kg
@@ -111,7 +94,7 @@ onMounted(() => {
         <div
           class="min-w-[300px] max-w-[300px] h-[500px] border border-[#000] 1024:hidden"
         >
-          <div id="adfox_173377051027593363"></div>
+          <div id="adfox_173519165622543363"></div>
         </div>
       </div>
     </div>
